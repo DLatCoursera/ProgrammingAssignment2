@@ -1,14 +1,14 @@
-## both functions are based on the example Function given in the 
-## Course description
+## both functions are based on the example function given in the 
+## course description
 
-## the makeCacheMatrix-Funktion takes a matrix as an argument
+## the makeCacheMatrix-Function takes a matrix as an argument
 ## and creates and returns a cacheMatrixobject
 
 # default Value to makeCacheMatrix() is the empty matrix
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL # the inverse of the given matrix x
     
-    # assing a Value to our matrixobject
+    # assigne a Value to our matrixobject
     set <- function(y){ 
         x <<- y
         inv <<- NULL
@@ -33,9 +33,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## "cacheSolve" takes a Argument of type cacheMatrix, as returned
-## from the function "makeCacheMatrix" an calculates the inverse of
+## from the function "makeCacheMatrix" and calculates the inverse
 ## of the matrix, if the inverse was calculated in the past and the 
-## and the result was chached, there happens no calculation, instead
+## result was chached, no calculation happens, instead
 ## the cached result is returned
 
 cacheSolve <- function(x, ...) {
